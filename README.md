@@ -1,6 +1,4 @@
-# Japan Challenge
-
-A web application built with Laravel 12.x, designed to [brief description of your project's purpose].
+# Buy_Chem_Japan_challenge
 
 ## Requirements
 
@@ -21,12 +19,8 @@ cd Buy_Chem_Japan_challenge
 composer install
 ```
 
-3. Install JavaScript dependencies:
-```bash
-npm install
-```
 
-4. Set up your environment file:
+3. Set up your environment file:
 ```bash
 cp .env.example .env
 php artisan key:generate
@@ -62,14 +56,3 @@ This will start:
 The project includes several helpful commands:
 
 - `composer run dev` - Start all development servers
-
-## Features
-
-[List the main features of your application]
-
-## Tech Stack
-
-- **Framework:** Laravel 12.x
-- **Authentication:** Laravel Sanctum
-
-//readme

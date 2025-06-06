@@ -72,3 +72,4 @@ The project includes several helpful commands:
 - **Framework:** Laravel 12.x
 - **Authentication:** Laravel Sanctum
 
+//readme

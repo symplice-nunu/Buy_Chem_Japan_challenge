@@ -6,15 +6,14 @@ A web application built with Laravel 12.x, designed to [brief description of you
 
 - PHP 8.2 or higher
 - Composer
-- Node.js & NPM
-- SQLite/MySQL/PostgreSQL
+- PostgreSQL
 
 ## Setup Instructions
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
-cd japan_challenge
+git clone https://github.com/symplice-nunu/Buy_Chem_Japan_challenge.git
+cd Buy_Chem_Japan_challenge
 ```
 
 2. Install PHP dependencies:
@@ -35,8 +34,12 @@ php artisan key:generate
 
 5. Configure your database in the `.env` file:
 ```env
-DB_CONNECTION=sqlite
-DB_DATABASE=/absolute/path/to/database/database.sqlite
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=jpc
+DB_USERNAME=symplice
+DB_PASSWORD=symplice
 ```
 
 6. Run database migrations:
@@ -53,16 +56,12 @@ This will start:
 - Laravel development server
 - Queue worker
 - Log viewer
-- Vite development server
 
 ## Development
 
 The project includes several helpful commands:
 
 - `composer run dev` - Start all development servers
-- `composer run test` - Run the test suite
-- `./vendor/bin/pint` - Format PHP code
-- `npm run dev` - Start Vite development server
 
 ## Features
 
@@ -72,16 +71,4 @@ The project includes several helpful commands:
 
 - **Framework:** Laravel 12.x
 - **Authentication:** Laravel Sanctum
-- **Development Tools:**
-  - Laravel Sail (Docker)
-  - Laravel Pint (Code formatting)
-  - Laravel Pail (Log viewer)
-  - Vite (Asset bundling)
 
-## Contributing
-
-[Add contribution guidelines if applicable]
-
-## License
-
-This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
